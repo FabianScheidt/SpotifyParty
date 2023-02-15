@@ -192,7 +192,8 @@ app.get('/authorize-success', (req, res) => {
 
 
 // Start Socket-Server
-const io = require('socket.io').listen(server);
+const { Server } = require("socket.io");
+const io = new Server(server);
 io.on('connection', (socket) => {
     console.log("Connection!");
     socket.emit('currentSongInfo', currentSong);
