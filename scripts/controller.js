@@ -111,9 +111,10 @@ app.controller('controller', function ($scope, ws, $http) {
     $scope.skip  = function() { ws.emit('skip');  };
 
     /**
-     * Redirect to authorize page
+     * Redirect to authorize/deauthorize page
      */
     $scope.authorize = function() { location.href = '/authorize'; };
+    $scope.deauthorize = function() { location.href = '/deauthorize'; };
 
     /**
      * Perform search on query-changes

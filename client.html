@@ -103,8 +103,16 @@
             text-align: center;
         }
 
-        .admin .authorize {
-            margin: 10px 20px 10px 20px;
+        .admin .authorize-deauthorize {
+            display: flex;
+            justify-content: center;
+        }
+
+        .admin .authorize,
+        .admin .deauthorize {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            margin: 0 5px 10px 5px;
             padding: 10px;
             text-align: center;
         }
@@ -146,7 +154,10 @@
     <div class="play" ng-click="play()">Play</div>
     <div class="pause" ng-click="pause()">Pause</div>
     <div class="skip" ng-click="skip()">Skip</div>
-    <div class="authorize" ng-click="authorize()">Authorize</div>
+    <div class="authorize-deauthorize">
+        <div class="authorize" ng-click="authorize()">Authorize</div>
+        <div class="deauthorize" ng-click="deauthorize()">Deauthorize</div>
+    </div>
 </div>
 </body>
 </html>

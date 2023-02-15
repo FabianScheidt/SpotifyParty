@@ -190,6 +190,13 @@ app.get('/authorize-success', (req, res) => {
     });
 });
 
+app.get('/deauthorize', (req, res) => {
+    spotify.setAccessToken(undefined);
+    spotify.setRefreshToken(undefined);
+    const redirectUri = req.protocol + '://' + req.get('Host') + '/?admin=admin';
+    res.redirect(302, redirectUri);
+});
+
 
 // Start Socket-Server
 const { Server } = require("socket.io");
