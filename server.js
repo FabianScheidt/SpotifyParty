@@ -1,5 +1,5 @@
-const clientId = "85128a8c51094125aa11f8c90e13fd1e";
-const clientSecret = "1bce9f1903104c1bbc1e12a71354c80b";
+const clientId = process.env.SPOTIFY_CLIENT_ID;
+const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
 
 const SpotifyWebApi = require('spotify-web-api-node');
 const spotify = new SpotifyWebApi({ clientId, clientSecret });

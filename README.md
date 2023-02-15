@@ -10,8 +10,8 @@ Download and install [NodeJS](https://nodejs.org/). Download the dependencies by
   npm install
   ```
 
-Create an applicatication on the [Spotify Website](https://developer.spotify.com/my-applications/). Enter the
-Client ID and the Client Secret in `server.js`.
+Create an applicatication on the [Spotify Website](https://developer.spotify.com/my-applications/). Set the
+environment variables `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` or edit `server.js`.
 
 ## Usage
 
