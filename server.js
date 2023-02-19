@@ -121,7 +121,7 @@ function pollPlaybackState() {
                 console.log('End of song. Playing next...');
                 nextSong();
             }
-        }).catch((e) => console.error('Error while polling playback state", e));
+        }).catch((e) => console.error('Error while polling playback state', e));
     }, 3000);
 }
 
